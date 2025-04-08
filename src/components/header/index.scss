@@ -1,0 +1,35 @@
+body, html {
+  
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+.header {
+    display: flex;
+    justify-content: center; // centraliza o conteúdo principal
+    align-items: center;
+    background-color: #1A1A1A;
+    padding: 10px 30px;
+    width: 75%;
+    height: 60px;
+    border-radius: 100px;
+  
+    .items-header {
+      display: flex;
+      gap: 30px; // espaço entre os links
+  
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  
