@@ -6,6 +6,9 @@ export function Land () {
             <div className="texto-land">
                 <h1>info-Devs</h1>
                 <p>A InfoDevs é a força por trás de soluções digitais que redefinem o futuro dos negócios. Com foco em inovação e inteligência, criamos experiências que transformam desafios em resultados. O próximo passo? Ele está mais perto do que você imagina.</p>
+                <div className="button-contato">
+                    <button className='contato'>Contato</button>
+                </div>
             </div>
 
             <div className="animacao">

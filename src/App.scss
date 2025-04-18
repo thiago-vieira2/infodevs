@@ -1,5 +1,16 @@
-.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.App {
+  .Header-land   {
+      display: flex;
+      padding-top: 2vh;
+      justify-content: center;
+  }
+  .sobre {
+    background-color: white;
+  }
+
+ 
 }
+
+// * {
+//   border: 1px green solid;
+// }
