@@ -1,20 +1,26 @@
 .land_main {
     display: flex;
     flex-direction: row;
-    height: 100vh; // 👈 agora sim!
+    width: 100vw;
+    height: 100vh;
+  
  
     align-items: center;
   
     .texto-land {
+      
       display: flex;
       flex-direction: column;
       color: white;
+      gap: 1vw;
       padding-left: 10vw;
-      width: 20vw;
-
+      width: max-content;
       h1 {
-        width: 60vh;
-        font-size: 100px;
+        width: 100vw;
+        font-size: 6.25rem;
+      }
+      p {
+        width: 30vw;
       }
   
       .button-contato {

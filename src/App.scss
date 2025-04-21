@@ -1,4 +1,14 @@
+
+
 .App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: max-content;
+  
+  scroll-snap-type: x mandatory;
+
+
   .Header-land   {
       display: flex;
       padding-top: 2vh;
@@ -8,9 +18,9 @@
     background-color: white;
   }
 
- 
 }
+ 
 
-* {
-   border: 1px green solid;
- }
+// * {
+//    border: 1px green solid;
+//  }

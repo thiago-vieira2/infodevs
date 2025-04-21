@@ -1,6 +1,7 @@
 .main-sobre {
     display: flex;
     flex-direction: column;
+    width: 100vw;
     position: relative; // Para poder posicionar as colunas
 
     .sobre-nos {
@@ -9,6 +10,7 @@
         padding: 2vh 10vw 0 10vw; // Espaço em cima e dos lados
         align-items: flex-start;
         justify-content: space-between; // Espaça o h1 e as colunas pros cantos
+        position: relative;
 
         .tittle {
             display: flex;
@@ -16,7 +18,7 @@
 
             h1 {
                 color: #222222;
-                font-size: 50px;
+                font-size: 3.125rem;
             }
         }
 
@@ -33,16 +35,16 @@
 
             .columns1 {
                 background-color: #000000;
-                width: 20vw;
-                height: 5vh;
+                width: 50vw;
+                height: 7vh;
                 animation: crescerSuaveParaEsquerda 10s infinite linear;
                 transform-origin: right;
             }
 
             .columns2 {
                 background-color: #1c1c1c;
-                width: 20vw;
-                height: 5vh;
+                width: 50dvw;
+                height: 7vh;
                 animation: crescerSuaveParaEsquerda2 10s infinite linear;
                 animation-delay: 0.5s;
                 transform-origin: right;
@@ -60,11 +62,12 @@
 
                 h3 {
                     color: #555555;
+                    font-size: 1.5rem;
                 }
 
                 p {
                     color: #555555;
-                    width: 21vw;
+                    width: 30vw;
                 }
             }
         }
@@ -76,45 +79,53 @@
         flex-direction: row;
         padding: 2vh 10vw 0 10vw; // Espaço em cima e dos lados
         align-items: flex-start;
+        position: relative;
         justify-content: space-between; // Espaça o h1 e as colunas pros cantos
-    
+     
         .text-diferenciais {
+            
             display: flex;
             flex-direction: column; // Muda pra linha
             justify-content: flex-end; // Alinha os filhos pra baixo (end do eixo cross, no caso vertical)
-            height: 100%;
+            width: 100vw;
     
             .tittle-diferenciais {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 7.5vw;               
                 h3 {
                     color: #555555;
+                    font-size: 1.5rem;
                 }
     
-                .columns-animation {
+                .columns-animation-diferenciais {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: flex-end;
+                    align-items: flex-start;
+                    
                     
                     position: absolute;
-                    right: 0;
-                    top: 12vh;
+                    left: 0;
+                    top: 7vh;
                     height: fit-content;
     
-                    .columns1 {
+                    .columns1-diferenciais {
                         background-color: #000000;
-                        width: 20vw;
-                        height: 5vh;
-                        animation: crescerSuaveParaEsquerda 10s infinite linear;
-                        transform-origin: right;
+                        width: 30vw;
+                        height: 7vh;
+                        animation: crescerSuaveParaEsquerda-Diferenciais1 10s infinite linear;
+                        transform-origin: left;
                     }
     
-                    .columns2 {
+                    .columns2-diferenciais {
                         background-color: #1c1c1c;
-                        width: 20vw;
-                        height: 5vh;
-                        animation: crescerSuaveParaEsquerda2 10s infinite linear;
+                        width: 30vw;
+                        height: 7vh;
+                        animation: crescerSuaveParaEsquerda-Diferenciais2 10s infinite linear;
                         animation-delay: 0.5s;
-                        transform-origin: right;
+                        transform-origin: left;
                     }
                 }
             }
@@ -124,8 +135,19 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end ;
+            
                 height: 20vh;
-                margin-top: 5vh;
+            
+
+                .lista-de-diferenciais {
+                    display: flex;
+                    gap: 2vh;
+                    flex-direction: column;
+                     li {
+                        color: #555555;
+
+                     }
+                }
             }
         }
     }
@@ -135,19 +157,19 @@
 // Keyframes suaves
 @keyframes crescerSuaveParaEsquerda {
     0% {
-        transform: scaleX(1);
+        transform: scaleX(1.1);
     }
     25% {
-        transform: scaleX(1.1);
-    }
-    50% {
         transform: scaleX(1.2);
     }
+    50% {
+        transform: scaleX(1.3);
+    }
     75% {
-        transform: scaleX(1.1);
+        transform: scaleX(1.2);
     }
     100% {
-        transform: scaleX(1);
+        transform: scaleX(1.1);
     }
 }
 
@@ -166,5 +188,42 @@
     }
     100% {
         transform: scaleX(1);
+    }
+}
+
+// Keyframes suaves
+@keyframes crescerSuaveParaEsquerda-Diferenciais1 {
+    0% {
+        transform: scaleX(1);
+    }
+    25% {
+        transform: scaleX(1.1);
+    }
+    50% {
+        transform: scaleX(1.2);
+    }
+    75% {
+        transform: scaleX(1.1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes crescerSuaveParaEsquerda-Diferenciais2 {
+    0% {
+        transform: scaleX(1.1);
+    }
+    25% {
+        transform: scaleX(1.2);
+    }
+    50% {
+        transform: scaleX(1.3);
+    }
+    75% {
+        transform: scaleX(1.2);
+    }
+    100% {
+        transform: scaleX(1.1);
     }
 }
