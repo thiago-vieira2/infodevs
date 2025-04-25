@@ -4,23 +4,31 @@
     align-items: center;
     justify-content: space-between;
     background-color: #1C1C1C;
-    width: 50vw;
-    height: 35vh;
+    width: 56vw;
+    height: 34vh;
+    
     border-radius: 30px;
 
     .texto-conteiner{
         display: flex;
         flex-direction: column;
-        color: white;
-        padding-left: 3.5vw;
+        
+        color: white; 
+        margin-left: 60px;
+        
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
+            font-family: 'Roboto';
+            font-weight: 100;
+            margin-top: 20px;
         }
 
         p{
             width: 25vw;
-            font-size: 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 300;
+            margin-top: -15px;
         }
 
     }
@@ -30,18 +38,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 4vh;
+        gap: 3vh;
         padding-right: 3.5vw;
+        transition: all 0.3s;
 
         .ferramentas1, .ferramentas2, .ferramentas3 {
             
         display: flex;
         justify-content: center;
         align-items: center;
-            width: 3vw;
-            height: 6.5vh;
+            width: 3.6vw;
+            height: 7.5vh;
             border-radius: 10px;
             background-color: #ffffff;
         }
     }
+
+    .ferramentas1:hover, .ferramentas2:hover, .ferramentas3:hover{
+        transform: scale(1.29);
+    }
+
+    .ferramentas1, .ferramentas2, .ferramentas3{
+        transition: all 0.5s;
+    }
+
+    
 }

@@ -11,8 +11,8 @@ export function Projetos () {
 
     const [projetos, setProjetos] = useState([
         {
-            tittle_projeto: "Doctor Health ",  
-            text_projeto : "A Doctor Health é uma plataforma online desenvolvida para facilitar o agendamento de consultas médicas, controle financeiro e atendimento remoto com web consultas. A integração com um bot de saúde permite automação no atendimento e acompanhamento de pacientes. É uma solução completa e prática para médicos e pacientes.", 
+            tittle_projeto: "Doctor's Health ",  
+            text_projeto : "A Doctor's Health é uma plataforma online desenvolvida para facilitar o agendamento de consultas médicas, controle financeiro e atendimento remoto com web consultas. A integração com um bot de saúde permite automação no atendimento e acompanhamento de pacientes. É uma solução completa e prática para médicos e pacientes.", 
             img_projeto1: react,
             img_projeto2: node,
             img_projeto3: sql
