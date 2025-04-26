@@ -53,12 +53,12 @@ export function Sobre() {
                     <div className="tittle-diferenciais">
 
                         <h3>Difenciais</h3>
-                        <div className="columns-animation">
-                            <div className="columns1">
+                        <div className="columns-animation-diferenciais">
+                            <div className="columns1-diferenciais">
 
                             </div>
 
-                            <div className="columns2">
+                            <div className="columns2-diferenciais">
 
                             </div>
                         </div>

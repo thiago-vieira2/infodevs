@@ -1,0 +1,66 @@
+.main_projeto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C1C1C;
+    width: 56vw;
+    height: 34vh;
+    
+    border-radius: 30px;
+
+    .texto-conteiner{
+        display: flex;
+        flex-direction: column;
+        
+        color: white; 
+        margin-left: 60px;
+        
+
+        h3 {
+            font-size: 2rem;
+            font-family: 'Roboto';
+            font-weight: 100;
+            margin-top: 20px;
+        }
+
+        p{
+            width: 25vw;
+            font-size: 0.85rem;
+            font-weight: 300;
+            margin-top: -15px;
+        }
+
+    }
+
+    .ferramentas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        padding-right: 3.5vw;
+        transition: all 0.3s;
+
+        .ferramentas1, .ferramentas2, .ferramentas3 {
+            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            width: 3.6vw;
+            height: 7.5vh;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+    }
+
+    .ferramentas1:hover, .ferramentas2:hover, .ferramentas3:hover{
+        transform: scale(1.29);
+    }
+
+    .ferramentas1, .ferramentas2, .ferramentas3{
+        transition: all 0.5s;
+    }
+
+    
+}
