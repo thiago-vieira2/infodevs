@@ -3,11 +3,18 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    max-height: 100vh;
     position: relative; // Para poder posicionar as colunas
 
     h1 {
         font-size: 3.125rem;
         color: #ffffff;
+        font-weight: 200;
+    }
+
+
+    .renderizar-componentes{
+        font-weight: 100;
     }
 
     .container-projeto {
@@ -19,7 +26,7 @@
 
         .columns-top {
             position: absolute;
-            top: 24%;
+            top: 30%;
             left: 0;
 
             display: flex;
@@ -28,34 +35,38 @@
 
             .columns1 {
                 width: 12vw;
-                height: 10vh;
+                height: 8vh;
                 background-color: #ffffff;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
                 animation: Columns1animation 10s infinite ease-in-out;
                 transform-origin: left;
             }
 
             .columns2 {
                 width: 15vw;
-                height: 10vh;
+                height: 8vh;
                 background-color: #F0F0F0;
                 animation: Columns2animation 10s infinite ease-in-out;
-                
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
                 transform-origin: left;
             }
 
             .columns3 {
                 width: 17vw;
-                height: 10vh;
+                height: 8vh;
                 background-color: #D4D4D4;
                 animation: Columns3animation 10s infinite ease-in-out;
-                
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
                 transform-origin: left;
             }
         }
 
         .columns-bottom {
             position: absolute;
-            top: 70%;
+            top: 80%;
             left: 0;
 
             display: flex;
@@ -64,7 +75,9 @@
 
             .columns4 {
                 width: 12vw;
-                height: 10vh;
+                height: 8vh;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
                 background-color: #ffffff;
                 animation: Columns4animation 10s infinite ease-in-out;
                 transform-origin: left;
@@ -72,19 +85,21 @@
 
             .columns5 {
                 width: 15vw;
-                height: 10vh;
+                height: 8vh;
                 background-color: #F0F0F0;
                 animation: Columns5animation 10s infinite ease-in-out;
-                
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
                 transform-origin: left;
             }
 
             .columns6 {
                 width: 17vw;
-                height: 10vh;
+                height: 8vh;
                 background-color: #D4D4D4;
                 animation: Columns6animation 10s infinite ease-in-out;
-                
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
                 transform-origin: left;
             }
         

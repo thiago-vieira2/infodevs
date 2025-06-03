@@ -32,7 +32,7 @@ export function Contato () {
             'X7rGGiXe092ksd_LO'       
         ).then(function(response) {
             console.log('Email enviado com sucesso:', response.status, response.text);
-            
+
             alert('Enviado com sucesso!');
 
             setAssunto('')
