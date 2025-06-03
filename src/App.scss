@@ -3,11 +3,19 @@
 .App {
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
   height: 100vh;
   width: max-content;
+  scroll-behavior: smooth;
   
   scroll-snap-type: x mandatory;
 
+  .land, .sobre, .projetos, .contato {
+    scroll-snap-align: start;
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
+
+  }
 
   .Header-land   {
       display: flex;
@@ -19,7 +27,8 @@
   }
 
 }
- 
+
+
 
 // * {
 //    border: 1px green solid;
